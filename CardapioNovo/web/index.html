@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Cardápio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Faça já seu pedido: </h1>
+    <div class="container">
+        <div class="header">
+            
+            <div class="nav">
+                <ul>
+                    <li><a href="arearestrita.jsp">Área Restrita</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="login-form">
+            <form action="LoginController" method="POST">
+                <h2>Acesse sua Conta:</h2>
+                <input type="text" name="login" placeholder="Digite seu e-mail" required><br><br>
+                <input type="password" name="senhalogin" placeholder="Digite sua senha" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+            
+             
+            <p>Não tem uma conta?<br> <a href="cadastrocliente.jsp"> Clique aqui!</a></p>
+        </div>
+    </div>
+</body>
+</html>

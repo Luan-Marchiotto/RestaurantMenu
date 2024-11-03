@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f5f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    min-height: 100vh; /* Altura mínima da tela inteira */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+header {
+    background-color: #1a6da5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; /* Garante que o header ocupe toda a largura */
+    position: relative; /* Permite posicionamento absoluto do botão */
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block; /* Garante que o título e o botão fiquem na mesma linha */
+}
+
+header .logout-button {
+    background-color: #dc3545; /* Cor de fundo vermelha */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px; /* Distância do canto direito */
+}
+
+header .logout-button:hover {
+    background-color: #c82333; /* Altera a cor de fundo ao passar o mouse */
+}
+
+main {
+    flex: 1; /* Ocupa o espaço restante vertical */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Garante que o main ocupe toda a largura */
+}
+
+.content {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove margem padrão */
+}
+
+nav ul li {
+    display: inline-block; /* Mostra os itens do menu um abaixo do outro */
+    margin-bottom: 10px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: #1a6da5;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #1a6da5; /* Adiciona borda azul */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Adiciona transição de cor */
+    display: block; /* Garante que cada item do menu ocupe toda a largura disponível */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+nav ul li a:hover {
+    background-color: #1a6da5; /* Muda a cor de fundo ao passar o mouse */
+    color: #fff; /* Muda a cor do texto ao passar o mouse */
+}
